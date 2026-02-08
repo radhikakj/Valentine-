@@ -1,0 +1,186 @@
+body {
+    background: #fff0f5;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #ff4f7b;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff5c8a;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin: 15px;
+}
+
+.card {
+    background: white;
+    margin: 30px auto;
+    padding: 25px;
+    width: 80%;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 15px 0;
+}
+
+.image-grid img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    min-height: 100vh;
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #e31212;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #c00f9f;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.quote-box {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 15px;
+    border-radius: 20px;
+    margin: 20px auto;
+    width: 90%;
+    font-style: italic;
+    color: #d6336c;
+}
+
+.story {
+    background: #c00f9f;
+    padding: 20px;
+    border-radius: 25px;
+    width: 90%;
+    margin: 20px auto;
+    line-height: 1.7;
+    color: hsl(0, 14%, 87%);
+}
+
+.proposal-box {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    padding: 25px;
+    border-radius: 30px;
+    margin: 30px auto;
+    width: 90%;
+    color: rgb(18, 8, 160);
+}
+
+.proposal-box h2 {
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+
+button {
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.yes {
+    background: #fff;
+    color: #a80e59;
+    font-weight: bold;
+}
+
+.no {
+    background: #ffd6e0;
+    color: #c9184a;
+    position: relative;
+}
+
+#response {
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+
+.yes-response {
+    background: white;
+    color: #ff4f7b;
+    padding: 20px;
+    border-radius: 20px;
+    animation: pop 0.6s ease;
+}
+
+@keyframes pop {
+    0% { transform: scale(0.8); }
+    100% { transform: scale(1); }
+}
+
+.btn {
+    display: inline-block;
+    background: white;
+    color: #ff4f7b;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+/* 📱 Mobile-first: already optimized */
+/* 💻 Desktop enhancement */
+@media (min-width: 768px) {
+    .story, .quote-box, .proposal-box {
+        width: 70%;
+    }
+}
+.hidden {
+    display: none;
+}
+
+/* Center proposal response when focused */
+.focus-mode {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

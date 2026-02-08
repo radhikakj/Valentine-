@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Memories 💖</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>💞 Our Memories 💞</h1>
+
+    <p class="subtitle">
+        Our second Valentine’s Day ❤️  
+        A journey that began with family, faith, and destiny
+    </p>
+
+    <div class="quote-box">
+        “Some stories don’t begin with dates,  
+        they begin with blessings.”
+    </div>
+
+    <div class="story">
+        <p>
+            Our <strong>Pennukaanal</strong> was our very first meeting —  
+            surrounded by family and love.  
+            That day marked the beginning of *us*.
+        </p>
+
+        <p>
+            We met only once, but that single meeting became one of the
+            most special moments of my life.
+        </p>
+
+        <p>
+            I’m waiting for our next meeting with hope —  
+            believing it won’t just be another memory,  
+            but the start of our life together.
+        </p>
+    </div>
+
+    <!-- Valentine Question -->
+    <div class="proposal-box">
+        <h2>💘 Will you be mine forever?</h2>
+
+        <div class="buttons">
+            <button id="yesBtn" class="yes">Yes 💖</button>
+            <button id="noBtn" class="no">No 🙈</button>
+        </div>
+
+        <div id="response"></div>
+    </div>
+
+    <a href="/memories" class="btn">📖 View Our Memories</a>
+
+</div>
+
+<script>
+const noBtn = document.getElementById("noBtn");
+const yesBtn = document.getElementById("yesBtn");
+const response = document.getElementById("response");
+const container = document.querySelector(".container");
+
+// Function to hide everything except proposal box
+function focusOnProposal() {
+    Array.from(container.children).forEach(el => {
+        if (!el.classList.contains("proposal-box")) {
+            el.classList.add("hidden");
+        }
+    });
+    container.classList.add("focus-mode");
+}
+
+noBtn.addEventListener("mouseover", () => {
+    const x = Math.random() * 120 - 60;
+    const y = Math.random() * 120 - 60;
+    noBtn.style.transform = `translate(${x}px, ${y}px)`;
+    response.innerHTML = "😢 Oh No Shundappi!!...";
+});
+
+yesBtn.addEventListener("click", () => {
+    focusOnProposal();
+    response.innerHTML = `
+        <div class="yes-response">
+            💐💖💐 <br><br>
+            I love you Muthmaniye ❤️ <br>
+            Forever my Kdaavee 💍
+        </div>
+    `;
+});
+
+noBtn.addEventListener("click", () => {
+    focusOnProposal();
+    response.innerHTML = "😢 Aww… still waiting for your yes 💔";
+});
+</script>

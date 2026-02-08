@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Memories 💕</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>💝 Our Memories</h1>
+
+{% for memory in memories %}
+<div class="card">
+    <h2>{{ memory.title }}</h2>
+
+    <div class="image-grid">
+        {% for key, value in memory.items() %}
+            {% if key.startswith("image") and value %}
+                <img src="/uploads/images/{{ value }}">
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    <p>{{ memory.description }}</p>
+</div>
+{% endfor %}
+
+<a href="/" class="btn">⬅ Home</a>
+
+</body>
+</html>
