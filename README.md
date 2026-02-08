@@ -19,7 +19,7 @@ This project is designed as a private, emotional space celebrating our **second 
 - 💞 Valentine-themed colorful and emotional UI  
 - 📖 Memories stored using `memories.json`  
 - 📸 Photo-based memory timeline  
-- 💘 Interactive **“Will you be mine forever?”** proposal
+- 💘 Interactive **“Will you be mine forever?”** proposal  
   - ✅ Yes → bouquet & love message  
   - 🙈 No → playful moving button with sad reaction  
 - 📱 Fully responsive (mobile-friendly)  
@@ -41,7 +41,6 @@ This project is designed as a private, emotional space celebrating our **second 
 
 ## 📁 Project Structure
 
-```text
 valentine-render/
 │
 ├── app.py
@@ -58,40 +57,28 @@ valentine-render/
 │       ├── first_photo.webp
 │       ├── chat1.jpeg
 │       └── ...
-```text
-
-## Run Locally
-```text
-pip install -r requirements.txt
-python app.py
-```text
-
-
-## Open in Browser
-```text
-http://127.0.0.1:5000
-```text
-
-## 🎯 Purpose
-
-This project is not just code.
-It is a digital memory, a promise, and a love letter —
-from our first meeting to the life we are waiting to begin together.
-
-## 💌 Author
-
-Created with love by Radhika K J
-For someone special — now and forever 💖💍
-
 
 ---
 
-If you want, I can also:
-- add screenshots section 📸  
-- make it more **technical** or more **romantic**  
-- add **AI/ML Valentine message feature** description  
+## 🚀 Run Locally
 
-Just say 😄💗
+pip install -r requirements.txt  
+python app.py
 
+Open in browser:  
+http://127.0.0.1:5000
 
+---
 
+## 🎯 Purpose
+
+This project is not just code.  
+It is a **digital memory**, a **promise**, and a **love letter** —  
+from our first meeting to the life we are waiting to begin together.
+
+---
+
+## 💌 Author
+
+Created with love by **Radhika K J**  
+For someone special — now and forever 💖💍
