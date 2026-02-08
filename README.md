@@ -58,23 +58,27 @@ valentine-render/
 │       ├── first_photo.webp
 │       ├── chat1.jpeg
 │       └── ...
-Run Locally
-'''
+```text
+
+## Run Locally
+```text
 pip install -r requirements.txt
 python app.py
-'''
-Open in Browser
-'''
-http://127.0.0.1:5000
-'''
+```text
 
-🎯 Purpose
+
+## Open in Browser
+```text
+http://127.0.0.1:5000
+```text
+
+## 🎯 Purpose
 
 This project is not just code.
 It is a digital memory, a promise, and a love letter —
 from our first meeting to the life we are waiting to begin together.
 
-💌 Author
+## 💌 Author
 
 Created with love by Radhika K J
 For someone special — now and forever 💖💍
